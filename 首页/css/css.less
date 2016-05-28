@@ -1,0 +1,278 @@
+@w: 100%;
+@h: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: @w;
+    height: @h;
+}
+
+.wrap {
+    width: @w;
+    height: @h;
+    position: relative;
+    header {
+        width: @w;
+        height: 2.51rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        position: relative;
+        .left {
+            position: absolute;
+            left: 0.85rem;
+            top: 0;
+            line-height: 2.51rem;
+            img {
+                width: 0.86rem;
+                height: 0.9rem;
+            }
+        }
+        h3 {
+            text-align: center;
+            line-height: 2.51rem;
+            color: #E93A65;
+            font-size: 0.83rem;
+        }
+        .right {
+            position: absolute;
+            right: 0.67rem;
+            top: 0;
+            line-height: 2.51rem;
+            img {
+                width: 0.98rem;
+                height: 0.95rem;
+            }
+        }
+    }
+    section {
+        width: @w;
+        position: absolute;
+        left: 0;
+        top: 2.51rem;
+        bottom: 2.8rem;
+        background: #eee;
+        overflow: auto;
+        .swiper-container {
+            width: @w;
+            height: 8.63rem;
+            overflow: hidden;
+            .swiper-wrapper {
+                list-style: none;
+                width: 80rem;
+                height: 8.63rem;
+                .swiper-slide {
+                    width: 16rem;
+                    height: 8.63rem;
+                    float: left;
+                    img {
+                        width: 16rem;
+                        height: @h;
+                    }
+                }
+            }
+        }
+        #text {
+            width: @w;
+            height: 2.22rem;
+            background: #fff;
+            overflow: hidden;
+            overflow: auto;
+            .text_List {
+                list-style: none;
+                width: 18rem;
+                height: 2.22rem;
+                display: -webkit-box;
+                -webkit-box-back: justify;
+                li {
+                    display: block;
+                    -webkit-box-flex: 1;
+                    text-align: center;
+                    line-height: 2.22rem;
+                    a {
+                        font-size: 0.43rem;
+                        color: #656565;
+                    }
+                }
+                .li {
+                    color: #DA4066;
+                    border-bottom: 2px solid #DA4066;
+                }
+            }
+        }
+        .matter {
+            width: @w;
+            #nav {
+                width: @w;
+                height: 5.25rem;
+                margin-top: 0.52rem;
+                background: #fff;
+                overflow: hidden;
+                overflow: auto;
+                .lis {
+                    width: 29rem;
+                    height: 5.25rem;
+                    a {
+                        line-height: 5.25rem;
+                        float: left;
+                        margin-right: 0.5rem;
+                        img {
+                            width: 4.25rem;
+                            height: 4.25rem;
+                        }
+                    }
+                }
+            }
+            .center {
+                width: @w;
+                height: 7.8rem;
+                margin-top: 0.51rem;
+                background: #fff;
+                h3 {
+                    width: @w;
+                    height: 2rem;
+                    line-height: 2rem;
+                    color: #969696;
+                    font-size: 0.62rem;
+                    font-weight: normal;
+                    padding-left: 0.62rem;
+                    a {
+                        float: right;
+                        color: #DE3D66;
+                        padding-right: 0.9rem;
+                    }
+                }
+                .nav_Down {
+                    width: @w;
+                    height: 5.83rem;
+                    display: -webkit-box;
+                    -webkit-box-back: justify;
+                    a {
+                        display: block;
+                        -webkit-box-flex: 1;
+                        text-align: center;
+                        span {
+                            color: #323232;
+                            font-size: 0.63rem;
+                            line-height: 0.8rem;
+                            p {
+                                width: 3.3rem;
+                                color: #999;
+                                font-size: 0.55rem;
+                                text-align: center;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+                        }
+                        img {
+                            display: block;
+                            margin: 0.6rem auto;
+                            width: 2.61rem;
+                            height: 2.83rem;
+                        }
+                    }
+                }
+            }
+            .content {
+                width: @w;
+                height: auto;
+                margin-top: 0.5rem;
+                .main {
+                    list-style: none;
+                    width: @w;
+                    height: auto;
+                    li {
+                        width: @w;
+                        height: auto;
+                        position: relative;
+                        background: #fff;
+                        margin-bottom: 0.5rem;
+                        img {
+                            width: @w;
+                            height: 19.18rem;
+                        }
+                        .body {
+                            width: 94%;
+                            height: auto;
+                            margin: auto;
+                            h3 {
+                                text-align: center;
+                                line-height: 1.26rem;
+                                font-size: 0.82rem;
+                                color: #343434;
+                            }
+                            p {
+                                font-size: 0.66rem;
+                                color: #343434;
+                                line-height: 1.06rem;
+                            }
+                            .lianjie {
+                                width: @w;
+                                height: 1.53rem;
+                                border-bottom: 1px solid #C9C9C9;
+                                line-height: 1.53rem;
+                                a {
+                                    color: #979797;
+                                    font-size: 0.53rem;
+                                    margin-right: 0.88rem;
+                                }
+                                span {
+                                    float: right;
+                                    padding-right: 0.2rem;
+                                    color: #979797;
+                                    font-size: 0.53rem;
+                                }
+                            }
+                            .click {
+                                width: @w;
+                                .fa {
+                                    color: #9A9A9A;
+                                    font-size: 0.73rem;
+                                    margin-right: 1.75rem;
+                                    line-height: 2rem;
+                                }
+                                .fa-star-o {
+                                    float: right;
+                                    padding-right: 0.2rem;
+                                    margin-right: 0;
+                                }
+                                .cl {
+                                    color: #fa4300;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        width: @w;
+        height: 2.8rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-top: 1px solid #E9E9E9;
+        display: -webkit-box;
+        -webkit-box-back: justify;
+        a {
+            display: block;
+            -webkit-box-flex: 1;
+            text-align: center;
+            color: #404040;
+            font-size: 0.37rem;
+            img {
+                display: block;
+                margin: 0.41rem auto;
+                width: 1.1rem;
+                height: 1.02rem;
+            }
+        }
+    }
+}
